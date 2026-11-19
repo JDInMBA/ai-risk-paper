@@ -1,0 +1,15 @@
+# The manuscript is unpublished and is not part of the public replication package.
+drafts/
+
+# Working notes
+docs/
+
+# Environments and caches
+.venv/
+code/node_modules/
+__pycache__/
+*.pyc
+
+# macOS and editor noise
+.DS_Store
+.Rhistory

@@ -1,0 +1,10 @@
+check,result,detail
+Diebold-Yilmaz GFEVD vs statsmodels FEVD (diagonal Sigma),PASS,max abs diff 0.0007
+BSADF closed form vs statsmodels OLS sup-t,PASS,-0.776523 vs -0.776523
+EVT POT 99% VaR on t(4) sample vs true quantile,PASS,"0.03747 vs 0.03747, xi=0.156 (theory 0.25)"
+Merton DD iterative vs direct solution,PASS,2.2721 vs 2.2721
+Kupiec LR = 0 when rate equals nominal,PASS,LR=3.55e-15
+Kupiec LR hand computation (10/100 at 5%),PASS,4.1308 vs 4.1308
+Forward H-day target uses t+1..t+H only,PASS,"fwd[0]=9.0 (expect 9), last valid index 16 (expect 16)"
+GARCH one-step variance recursion vs arch forecast,PASS,1.421348 vs 1.421348
+Standardised-t ES formula vs Monte Carlo,PASS,-2.7278 vs -2.7237

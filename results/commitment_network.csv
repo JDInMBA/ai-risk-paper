@@ -1,0 +1,12 @@
+lab,supplier,commit_bn,status,note,base_case,mcap_bn_2026_11_05,commit_to_mcap_pct
+Anthropic,GOOGL,121.3,S-1/A (non-cancelable),CSP hosting Apr-2026..Jul-2033; further TPU est. $125-150bn excluded,True,3494.8258505859376,3.470845334958908
+Anthropic,AMZN,110.0,S-1/A (non-cancelable),May-2026..Apr-2036,True,2843.834996612549,3.868016257308429
+Anthropic,MSFT,44.9,S-1/A (non-cancelable),Nov-2026..Jun-2033,True,3990.5347254638673,1.125162492973438
+Anthropic,AVGO,125.2,"S-1/A (equipment lease, partly assigned)",2026 Lease Arrangement rent over 5 yrs; portion assigned to financial partner,True,1424.7071040344238,8.787771159802887
+OpenAI,ORCL,300.0,Press reports (not named in Oracle filings),~5-yr cloud contract from 2027,True,345.4800109863281,86.8357040812622
+OpenAI,MSFT,250.0,Company announcement (Oct-2025),incremental Azure commitment,True,3990.5347254638673,6.2648245711215935
+OpenAI,AMZN,138.0,Supplier disclosure / reports,$38bn (Nov-2025) + reported $100bn expansion,True,2843.834996612549,4.852602213714211
+OpenAI,CRWV,22.4,Supplier filing,maximum contract value,True,24.40593991470337,91.78093561766538
+OpenAI,CBRS,20.0,Supplier filing (approx.),~750 MW inference capacity through 2028,True,18.64622179107666,107.26033522550506
+OpenAI,AVGO,350.0,Analyst estimate (terms undisclosed),10 GW custom accelerators - extended scenario only,False,1424.7071040344238,24.56645292277165
+OpenAI,AMD,90.0,Analyst estimate (6 GW),extended scenario only; plus warrant dilution,False,671.7083898620606,13.398671411337002

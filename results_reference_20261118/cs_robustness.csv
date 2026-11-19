@@ -1,0 +1,13 @@
+spec,drop,coef,t,note
+MES,none,-3.063994636816482,-4.192076244715555,
+MES,AMD,-2.8880299658933524,,"SE undefined (single FLD3 obs, leverage=1)"
+MES,ORCL,-3.261311062589973,,"SE undefined (single FLD3 obs, leverage=1)"
+MES,"PERMUTATION p-value (two-sided, 2000 draws)",-3.063994636816482,0.0665,
+ES5,none,3.8450202353143856,8.38536880229565,
+ES5,AMD,3.674411304526199,,"SE undefined (single FLD3 obs, leverage=1)"
+ES5,ORCL,4.02617044555582,,"SE undefined (single FLD3 obs, leverage=1)"
+ES5,"PERMUTATION p-value (two-sided, 2000 draws)",3.8450202353143856,0.168,
+LTD,none,0.23422201795404907,4.396875716110836,
+LTD,AMD,0.20985634557273536,,"SE undefined (single FLD3 obs, leverage=1)"
+LTD,ORCL,0.2615442489486382,,"SE undefined (single FLD3 obs, leverage=1)"
+LTD,"PERMUTATION p-value (two-sided, 2000 draws)",0.23422201795404907,0.1025,

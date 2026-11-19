@@ -1,0 +1,43 @@
+Reference snapshot of results/ -- 18 November 2026
+
+How it was validated
+  Two complete runs of 03 through 13b were executed back to back on the same
+  machine, from the same code and the same input data, with nothing else
+  touching the project in between. Of the 61 output files, 60 came out
+  byte-identical. The 61st, event_pooled.txt, differed only in the wall-clock
+  date and time that statsmodels prints in its summary header; every number in
+  it was identical. This directory is a copy of the second run.
+
+  LightGBM's deterministic mode fixes a result for a given build, not across
+  processor architectures, so the machine-learning tables can move in the third
+  decimal on different hardware. The environment below is the one in which the
+  bit-for-bit claim holds.
+
+Input data (md5)
+  prices.csv          29d1249ac55dbf58aeaf1f59ec7f67b1
+  fred.csv            a922e5abb343879e40d9bcb7659f9852
+  sec_facts_long.csv  603b860b99f2c1afe15eb151066d5b0c
+
+Environment
+  python 3.12.15
+  numpy 2.5.3 pandas 3.0.5 scipy 1.18.1
+  scikit-learn 1.9.1 lightgbm 4.7.0 statsmodels 0.15.0 arch 8.0.0
+
+What changed on 18 November
+  The SEC fundamentals download previously carried its own hardcoded list of 49
+  tickers while the paper scores 69, so twenty firms were silently absent from
+  any regression using size or leverage. It now takes the universe from
+  common.py and also reads the ifrs-full namespace for foreign private issuers.
+  The sample with controls rises from 46 firms to 60.
+
+  The placebo baskets in 07b were hardcoded. They are now selected by the
+  distance rule the paper describes, and the script additionally compares the
+  lab-dependent basket against 500 random baskets drawn from the same pool.
+
+Refreshed 19 November
+  Comments shortened throughout, and the portfolio baskets in 07_var_backtest.py are
+  now derived from the FLD scores in common.py rather than repeated as literals, with
+  01_download_data.py asserting that its universe matches. Summing basket members in
+  sorted order moved the tick-loss and Diebold-Mariano statistics by at most 1.4e-05;
+  no exceedance count, coverage p-value or Basel colour changed, and the manuscript
+  rebuilt byte-identical. 07 and 07b were each run twice to confirm.
